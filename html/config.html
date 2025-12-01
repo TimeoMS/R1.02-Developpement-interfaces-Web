@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="/amuhome/z25003515/Projet/R1.02-Developpement-interfaces-Web/css/config.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Configuration</title>
 </head>
 <body>
+  <section class="titre">
      <h3> Ma configuration </h3>
-<section>
+     </section>
+<section class="panier">
       <img
         class="donutbasique"
         src="/amuhome/z25003515/Projet/R1.02-Developpement-interfaces-Web/img/Donutdefoumalade.png"
         alt="Tranche" /> 
+</section>
+    <section class="options-container">
         <label for="color-select">Couleur : </label>
 <select name="couleur" id="color-select">
   <option value="">Nature</option>
@@ -23,7 +28,7 @@
   <option value="orange">Orange</option>
 </select>
         <label for="more-select">Option 1 :</label>
-<select name="Option 1" id="more-select">
+<select name="Option 1" id="more-select1">
   <option value="">Sans</option>
   <option value="vermicelles">Vermicelles colorées</option>
   <option value="Chocolat">Pépites de chocolat</option>
@@ -38,7 +43,7 @@
   <option value="Mousse">Mousse</option>
 </select>
         <label for="more-select">Option 2 :</label>
-<select name="Option 2" id="more-select">
+<select name="Option 2" id="more-select2">
   <option value="">Sans</option>
   <option value="vermicelles">Vermicelles colorées</option>
   <option value="Chocolat">Pépites de chocolat</option>
@@ -53,7 +58,7 @@
   <option value="Mousse">Mousse</option>
 </select>
         <label for="more-select">Option 3 :</label>
-<select name="Option 3" id="more-select">
+<select name="Option 3" id="more-select3">
   <option value="">Sans</option>
   <option value="vermicelles">Vermicelles colorées</option>
   <option value="Chocolat">Pépites de chocolat</option>
@@ -77,6 +82,10 @@
   <option value="Pomme">Fourrage pomme</option>
 </select>
 </section>
+<section class="fin">
+     <label for="Nom">Nom de votre configuration  </label><input id="nom" type="text" name="nom" value=" ">
+     <input type="submit" value="J'ai terminé"> 
+     </section>
     
 </body>
 </html>
