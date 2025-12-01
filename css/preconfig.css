@@ -1,0 +1,16 @@
+.h1 {
+    justify-content: center;
+    display: flex;
+}
+
+.images {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    gap: 5%;
+}
+
+.button {
+    justify-content: center;
+    display: flex;
+}

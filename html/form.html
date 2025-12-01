@@ -2,6 +2,8 @@
 <html lang="fr">
 
 <head>
+    <link href="../css/form.css" rel="stylesheet">
+    <link href="../css/global.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DonutAix</title>
@@ -10,8 +12,8 @@
 <body>
     <header> <!--menu--> </header>
     <main>
-        <h1>Inscription</h1>
-        <ul>
+        <h1 class="h1">Inscription</h1>
+        <ul class="inscription-form">
             <li>
                 <label for="Nom">Nom</label>
                 <input id="Nom" type="text" name="Nom" value=" ">
@@ -33,17 +35,22 @@
                 <input id="Confirmation MdP" type="text" name="Confirmation MdP" value=" ">
             </li>
         </ul>
-        <section>
-            <input id="actus" type="radio" name="actus" value="Actus">
-            <label for="actus">Recevoir les actus</label>
+        <input type="checkbox" name="actus" id="Actus" class="checkbox" title="Recevoir les Actus">
+        <label for="actus"><em>Recevoir les actus</em></label>
+        <ol class="sexe">
+            <label for="sexe"></label>
+            <li>
+                <input id="sexehomme" type="radio" name="sexe" value="Homme">
+                <label for="">Homme</label>
+            </li>
+            <li>
+                <input id="sexefemme" type="radio" name="sexe" value="Femme">
+                <label for="">Femme</label>
+            </li>
+        </ol>
+        <section class="h1">
+            <input type="submit" value="S'inscrire">
         </section>
-        <section>
-            <input id="sexehomme" type="radio" name="sexehomme" value="Homme">
-            <label for="homme">Homme</label>
-            <input id="sexefemme" type="radio" name="sexefemme" value="Femme">
-            <label for="femme">Femme</label>
-        </section>
-        <input type="submit" value="S'inscrire">
     </main>
     <footer><!--pied de page--></footer>
 </body>
