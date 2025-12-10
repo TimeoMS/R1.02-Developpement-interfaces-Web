@@ -3,11 +3,10 @@
     display: flex;
 }
 
-.sexe {
+.case {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
+    justify-content: left;
+    gap: 2%;
     list-style: none;
 }
 
@@ -19,7 +18,7 @@
     background: #ffffff;
     border: 1px solid #a9a9a9;
     border-radius: 50px;
-    font-family: 'Helvetica Neue', sans-serif;
+
 }
 
 .inscription-form h2 {
