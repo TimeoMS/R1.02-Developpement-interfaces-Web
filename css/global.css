@@ -24,8 +24,13 @@ body {
   color: #000;
 }
 
-nav ul li {
+li {
   list-style: none;
+}
+
+ul,
+li {
+  height: fit-content;
 }
 
 a:visited,
