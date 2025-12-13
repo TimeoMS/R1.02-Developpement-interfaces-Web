@@ -19,13 +19,15 @@ text-align: center;
 }
 .options-container label,
 .options-container select {
-    /* Garantit que chaque élément prend sa propre ligne et est aligné à gauche */
-    display: block;
+    display: flex;
     width: 100%;
     margin-bottom: 10px; 
     text-align: left;
 }
-.fin {
-display: flex;
+.fin input{
+display: block;
+    width: 50%;
+    margin-bottom: 10px; 
+    text-align: left;
 
 }

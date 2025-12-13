@@ -1,5 +1,23 @@
-.donutbasique {
+  .donutbasique {
   width: 491px;
-  height: 450px;
-  
+  height: 450px; 
+}
+.Container {
+display: flex;
+align-items: center;
+
+justify-content:flex-start;
+}
+.Content {
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  gap: 10px;
+}
+.Content h4 {
+  margin: 1px;
+}
+.nombre {
+  display: flex;
+  gap: 10px; /* espace entre nom et prix */
 }

@@ -1,5 +1,43 @@
-.base {
-display: flex;
-lex-direction: column;
- text-align: left;
+.titre {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ margin-bottom: 20px;
 }
+.base textarea {
+  background-color: rgb(168, 168, 163);
+}
+.base label {
+margin-top: 10px;
+margin-bottom: 10px; 
+font-weight: bold;
+}
+.base {
+padding: 10px;
+display: flex;
+max-width: 600px; 
+width: 90%;
+flex-direction: column;
+align-items: left; /* Centre le formulaire horizontalement */
+}
+.star-rating {
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.stars {
+    margin-top: 10px;
+    margin-bottom: 1px; 
+  width: 122px;
+  height: 24px;
+}
+.fin {
+    /* Assurez-vous que .fin a une largeur définie (la même que .base) */
+    max-width: 600px; 
+    width: 90%; 
+    
+    /* Active Flexbox pour centrer le contenu (le bouton) */
+    display: flex;
+    justify-content: center; /* CLÉ : Centre le bouton horizontalement */
+    margin-top: 20px; /* Ajoute l'espace au-dessus de la section */
+}
+
