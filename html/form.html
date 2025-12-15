@@ -4,16 +4,33 @@
 <head>
     <link href="../css/form.css" rel="stylesheet">
     <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DonutAix</title>
 </head>
 
 <body>
-    <header> <!--menu--> </header>
+    <header>
+        <nav>
+            <ul>
+                <li id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+                <li id="logo">Donut <span>Aix</span></li>
+                <li id="">
+                    <div id="shopping"></div>
+                    <div id="user"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h1 class="h1">Inscription</h1>
-        <ul class="inscription-form">
+        <ul class="formulaire">
             <li>
                 <label for="Nom">Nom</label>
                 <input id="Nom" type="text" name="Nom" value=" ">
@@ -35,24 +52,43 @@
                 <input id="Confirmation MdP" type="text" name="Confirmation MdP" value=" ">
             </li>
         </ul>
+
         <section class="case">
-            <input type="checkbox" name="actus" id="Actus" class="checkbox" title="Recevoir les Actus">
-            <label for="actus"><em>Recevoir les actus</em></label>
+            <section>
+                <input type="checkbox" name="actus" id="Actus" class="checkbox" title="Recevoir les Actus">
+                <label for="actus"><em>Recevoir les actus</em></label>
+            </section>
+            <ol class="genre">
+                <li>
+                    <input id="sexehomme" type="radio" name="sexe" value="Homme">
+                    <label for="">Homme</label>
+                </li>
+                <li>
+                    <input id="sexefemme" type="radio" name="sexe" value="Femme">
+                    <label for="">Femme</label>
+                </li>
+            </ol>
         </section>
-        <ol class="case">
-            <label for="sexe"></label>
-            <li>
-                <input id="sexehomme" type="radio" name="sexe" value="Homme">
-                <label for="">Homme</label>
-            </li>
-            <li>
-                <input id="sexefemme" type="radio" name="sexe" value="Femme">
-                <label for="">Femme</label>
-            </li>
-        </ol>
+
         <section class="h1">
-            <input type="submit" value="S'inscrire">
+            <input class="inscription" type="submit" value="S'inscrire">
         </section>
     </main>
-    <footer><!--pied de page--></footer>
+
+    <footer>
+        <ul>
+            <li id="authors">
+                © 2025 DonutAix - Tous droits réservés. Ce site et son contenu sont
+                protégés par le droit d’auteur.
+            </li>
+            <li><img src="./img/Arrow.svg" alt="" /></li>
+            <li id="social-medias">
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Tiktok</a></li>
+                    <li><a href="">X</a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
 </body>

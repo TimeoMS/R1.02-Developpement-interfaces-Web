@@ -37,7 +37,16 @@ a:visited,
 a,
 a:focus,
 a:hover {
-  color: inherit; /* ou une couleur spécifique, ex: #000 */
-  background: none; /* si un surlignage apparaît */
-  text-decoration: none; /* au besoin */
+  color: inherit;
+  /* ou une couleur spécifique, ex: #000 */
+  background: none;
+  /* si un surlignage apparaît */
+  text-decoration: none;
+  /* au besoin */
+}
+
+.h1 {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 2%;
 }

@@ -4,6 +4,7 @@
 <head>
     <link href="../css/global.css" rel="stylesheet" />
     <link href="../css/about.css" rel="stylesheet" />
+    <link href="../css/index.css" rel="stylesheet" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DonutAix</title>
@@ -11,34 +12,41 @@
 
 <body>
     <header>
-        <!--menu-->
+        <nav>
+            <ul>
+                <li id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+                <li id="logo">Donut <span>Aix</span></li>
+                <li id="">
+                    <div id="shopping"></div>
+                    <div id="user"></div>
+                </li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <!--contenu de la page-->
         <h1 class="h1">Qui sommes-nous ?</h1>
 
-        <ol class="p">
+        <ol class="pers">
             <li>
-                <p>
-                <h1>A</h1>
-                </p>
+                <h1 class="p">A</h1>
+                <p class="prenoms">Anna</p>
             </li>
             <li>
-                <p>
-                <h1>T</h1>
-                </p>
+                <h1 class="p">T</h1>
+                <p class="prenoms">Timéo</p>
             </li>
             <li>
-                <p>
-                <h1>N</h1>
-                </p>
+                <h1 class="p">N</h1>
+                <p class="prenoms">Nicolas</p>
             </li>
         </ol>
-        <ol class="prenoms">
-            <li>Anna</li>
-            <li>Timéo</li>
-            <li>Nicolas</li>
-        </ol>
+
         <section>
             <section class="map-container">
                 <iframe
@@ -52,23 +60,37 @@
                 <p><a href="mailto:contact@donutaix.fr">contact@donutaix.fr</a></p>
             </address>
         </section>
+
         <section>
             <p>
             <h2 class="h2">Autres Sites</h2>
             </p>
             <ol class="sites">
                 <li>
-                    <p>Site de Enrique, Simon et Philippe</p>
+                    <p class="site">Site de Enrique, Simon et Philippe</p>
                 </li>
                 <li>
-                    <p>Site de Kalvin et Valdislav</p>
+                    <p class="site">Site de Kalvin et Valdislav</p>
                 </li>
             </ol>
         </section>
     </main>
-    <footer>
 
-        <!--pied de page-->
+    <footer>
+        <ul>
+            <li id="authors">
+                © 2025 DonutAix - Tous droits réservés. Ce site et son contenu sont
+                protégés par le droit d’auteur.
+            </li>
+            <li><img src="./img/Arrow.svg" alt="" /></li>
+            <li id="social-medias">
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Tiktok</a></li>
+                    <li><a href="">X</a></li>
+                </ul>
+            </li>
+        </ul>
     </footer>
 </body>
 
