@@ -4,8 +4,8 @@
  text-align: center;
  margin-bottom: 20px;
 }
-.base textarea {
-  background-color: rgb(168, 168, 163);
+.content h4,h3 {
+  margin: 1px;
 }
 .base label {
 margin-top: 10px;
@@ -13,31 +13,61 @@ margin-bottom: 10px;
 font-weight: bold;
 }
 .base {
-padding: 10px;
-display: flex;
-max-width: 600px; 
-width: 90%;
-flex-direction: column;
-align-items: left; /* Centre le formulaire horizontalement */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  gap: 10px;
+
 }
-.star-rating {
-    margin-top: 10px;
-    margin-bottom: 10px; 
-}
-.stars {
-    margin-top: 10px;
-    margin-bottom: 1px; 
-  width: 122px;
-  height: 24px;
-}
-.fin {
-    /* Assurez-vous que .fin a une largeur définie (la même que .base) */
-    max-width: 600px; 
-    width: 90%; 
-    
-    /* Active Flexbox pour centrer le contenu (le bouton) */
-    display: flex;
-    justify-content: center; /* CLÉ : Centre le bouton horizontalement */
-    margin-top: 20px; /* Ajoute l'espace au-dessus de la section */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  gap: 5px;
 }
 
+.rating input {
+  display: none;
+}
+
+.rating label {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("../img/emptystar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  background-image: url("../img/fullstar.png");
+}
+
+.rating input:checked ~ label {
+  background-image: url("../img/fullstar.png");
+}
+.textarea {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  width: 100%;
+}
+.submit {
+  display: flex;
+  align-self: center;
+}
+.fin {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 30px;              
+}
