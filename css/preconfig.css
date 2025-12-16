@@ -1,7 +1,17 @@
 .donuts {
     justify-content: center;
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
+=======
+}
+
+.images {
+    width: 100;
+    height: 100;
+    justify-content: center;
+    display: grid;
+>>>>>>> f968d36a14e963c2c1e1cc1e8b9dc1c35f8c8d1d
     list-style: none;
     gap: 5%;
 }

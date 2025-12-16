@@ -1,5 +1,11 @@
 .p {
+<<<<<<< HEAD
     gap: 5%;
+=======
+    justify-content: center;
+    display: flex;
+    gap: 3%;
+>>>>>>> f968d36a14e963c2c1e1cc1e8b9dc1c35f8c8d1d
     list-style: none;
     font-size: 5em;
     font-weight: bold;
