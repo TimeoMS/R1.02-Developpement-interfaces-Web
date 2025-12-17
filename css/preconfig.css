@@ -1,51 +1,74 @@
-.donuts {
-    justify-content: center;
-    display: flex;
-<<<<<<< HEAD
-    flex-direction: column;
-=======
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 12.5rem);
+  width: 100%;
+  padding: 2rem 0;
 }
 
-.images {
-    width: 100;
-    height: 100;
-    justify-content: center;
-    display: grid;
->>>>>>> f968d36a14e963c2c1e1cc1e8b9dc1c35f8c8d1d
-    list-style: none;
-    gap: 5%;
+main > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
-.images_donuts {
-    display: block;
-    margin: auto;
-    border-radius: 10px;
-    width: 200px;
-    height: 200px;
+.donut-image {
+  width: 35rem;
+  height: 15rem;
+  border-start-end-radius: 10px;
+  border-start-start-radius: 10px;
 }
 
-.stars {
-    display: block;
-    margin-left: auto;
-    border-radius: 20px;
-    width: 100px;
-    height: 40px;
+.donut li {
+  width: 100%;
 }
 
-.buttons {
-    padding-top: 2%;
-    border-top: 2px solid black;
-    display: flex;
-    justify-content: center;
-    gap: 10px;
+.donut,
+.donut-text,
+.donut-bottom {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.box {
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-bottom: 2%;
-    margin-left: 2%;
-    margin-right: 2%;
-    padding-left: 2%;
-    padding-right: 2%;
+.donut {
+  background: #bbb;
+  border-radius: 10px;
+}
+
+.donut-text {
+  border-bottom: solid #000 1px;
+}
+
+.donut-bottom {
+  padding: 1rem;
+  row-gap: 1rem;
+}
+
+.donut-stars {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.donut-stars li {
+  width: fit-content;
+}
+
+.button {
+  padding: 0.51rem 1rem;
+}
+
+.donut-interaction {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
 }

@@ -7,7 +7,7 @@ main ul {
 }
 
 main {
-  height: calc(100vh - 13.05rem);
+  min-height: calc(100vh - 12.5rem);
   display: flex;
   justify-content: center;
   align-items: center;

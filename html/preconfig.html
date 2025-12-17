@@ -1,205 +1,201 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <link href="../css/preconfig.css" rel="stylesheet">
-    <link href="../css/global.css" rel="stylesheet" />
-    <link href="../css/index.css" rel="stylesheet" />
+  <head>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/headerfooter.css" />
+    <link rel="stylesheet" href="../css/preconfig.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DonutAix</title>
+  </head>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li id="burger-menu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </li>
-                <li id="logo">Donut <span>Aix</span></li>
-                <li id="">
-                    <div id="shopping"></div>
-                    <div id="user"></div>
-                </li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li id="burger-menu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </li>
+          <li id="logo">Donut <span>Aix</span></li>
+          <li id="">
+            <div id="shopping"></div>
+            <div id="user"></div>
+          </li>
+        </ul>
+        <ul id="burger-opened">
+          <li>
+            <a href="../index.html">
+              Accueil
+              <img src="../img/Arrow.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="../html/config.html">
+              Configuration de votre donut
+              <img src="../img/Arrow.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="../html/preconfig.html">
+              Pré-configurations disponibles
+              <img src="../img/Arrow.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="../html/notice.html">
+              Avis utilisateurs
+              <img src="../img/Arrow.svg" alt="" />
+            </a>
+          </li>
+          <li>
+            <a href="../html/about.html">
+              Qui sommes-nous ?
+              <img src="../img/Arrow.svg" alt="" />
+            </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <h1 class="h1">Préconfigurations</h1>
-<<<<<<< HEAD
-        </p>
-        <ul class="donuts">
-            <li class="box">
-                <img class="images_donuts" src="../img/donut_rose.jpg" alt="Donut 1" />
-                <p>
-                <h3><em>Pink princess</em></h3>
-                Glaçage à la fraise ainsi que des vermicelles. Donut fourré à la fraise
-                </p>
-                <img class="stars" src="../img/stars4.png" alt="note sur 5 étoiles" />
-                <section class="buttons">
-                    <button type="button">Continuer à partir de cette configuration</button>
-                    <button type="button">Ajouter au panier</button>
-                </section>
-            </li>
-            <li class="box">
-                <img class="images_donuts" src="../img/donut_marron.jpg" alt="Donut 1" />
-                <p>
-                <h3><em>Classic</em></h3>
-                Glaçage au chocolat ainsi que des vermicelles. Donut fourré au chocolat au lait
-                </p>
-                <img class="stars" src="../img/stars5.png" alt="note sur 5 étoiles" />
-                <section class="buttons">
-                    <button type="button">Continuer à partir de cette configuration</button>
-                    <button type="button">Ajouter au panier</button>
-                </section>
-            </li>
-            <li class="box">
-                <img class="images_donuts" src="../img/donut_bleu.jpg" alt="Donut 1" />
-                <p>
-                <h3><em>Dream Sky</em></h3>
-                Glaçage barbe à papa ainsi que des vermicelles
-                </p>
-                <img class="stars" src="../img/stars3.png" alt="note sur 5 étoiles" />
-                <section class="buttons">
-                    <button type="button">Continuer à partir de cette configuration</button>
-                    <button type="button">Ajouter au panier</button>
-                </section>
-            </li>
-            <li class="box">
-                <img class="images_donuts" src="../img/donut_blanc.jpg" alt="Donut 1" />
-                <p>
-                <h3><em>Ghost</em></h3>
-                Glaçage à la vanille ainsi que des vermicelles. Donut fourré au chocolat blanc
-                </p>
-                <img class="stars" src="../img/stars1.png" alt="note sur 5 étoiles" />
-                <section class="buttons">
-                    <button type="button">Continuer à partir de cette configuration</button>
-                    <button type="button">Ajouter au panier</button>
-                </section>
-=======
-        <ul class="images">
+      <ul>
+        <li class="donut">
+          <img class="donut-image" src="../img/donut_blanc.jpg" alt="" />
+          <ul class="donut-bottom">
             <li>
-                <ul>
-                    <li>
-                        <img height="100" width="100" src="../img/donut_rose.jpg" alt="Donut 1" />
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <section>
-                                    <h3><em>Pink princess</em></h3>
-                                    <p>Glaçage à la fraise ainsi que des vermicelles. Donut fourré à la fraise</p>
-                                </section>
-                                <img width="140" height="50" src="../img/stars4.png" alt="note sur 5 étoiles" />
-                            </li>
-                            <li class="button">
-                                <button class="favorite styled" type="button">Continuer à partir de cette
-                                    configuration</button>
-                                <button class="favorite styled" type="button">Ajouter au panier</button>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+              <ul class="donut-text">
+                <li>
+                  <p>Nom de la configuration</p>
+                  <p>Description de la configuration</p>
+                </li>
+                <li>
+                  <ul class="donut-stars">
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-
+            <li class="donut-interaction">
+              <button class="button">
+                Continuer à partir de cette configuration
+              </button>
+              <img src="../img/ArrowWhite.svg" alt="" />
+            </li>
+          </ul>
+        </li>
+        <li class="donut">
+          <img class="donut-image" src="../img/donut_blanc.jpg" alt="" />
+          <ul class="donut-bottom">
             <li>
-                <ul>
-                    <li>
-                        <img height="100" width="100" src="../img/donut_marron.jpg" alt="Donut 2" />
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <section>
-                                    <h3><em>Classic</em></h3>
-                                    <p>Glaçage au chocolat ainsi que des vermicelles. Donut fourré au chocolat au lait
-                                    </p>
-                                </section>
-                                <img width="140" height="50" src="../img/stars4.png" alt="note sur 5 étoiles" />
-                            </li>
-                            <li class="button">
-                                <button class="favorite styled" type="button">Continuer à partir de cette
-                                    configuration</button>
-                                <button class="favorite styled" type="button">Ajouter au panier</button>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+              <ul class="donut-text">
+                <li>
+                  <p>Nom de la configuration</p>
+                  <p>Description de la configuration</p>
+                </li>
+                <li>
+                  <ul class="donut-stars">
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-
+            <li class="donut-interaction">
+              <button class="button">
+                Continuer à partir de cette configuration
+              </button>
+              <img src="../img/ArrowWhite.svg" alt="" />
+            </li>
+          </ul>
+        </li>
+        <li class="donut">
+          <img class="donut-image" src="../img/donut_blanc.jpg" alt="" />
+          <ul class="donut-bottom">
             <li>
-                <ul>
-                    <li>
-                        <img height="100" width="100" src="../img/donut_bleu.jpg" alt="Donut 3" />
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <section>
-                                    <h3><em>Dream Sky</em></h3>
-                                    <p>Glaçage barbe à papa ainsi que des vermicelles</p>
-                                </section>
-                                <img width="140" height="50" src="../img/stars4.png" alt="note sur 5 étoiles" />
-                            </li>
-                            <li class="button">
-                                <button class="favorite styled" type="button">Continuer à partir de cette
-                                    configuration</button>
-                                <button class="favorite styled" type="button">Ajouter au panier</button>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
+              <ul class="donut-text">
+                <li>
+                  <p>Nom de la configuration</p>
+                  <p>Description de la configuration</p>
+                </li>
+                <li>
+                  <ul class="donut-stars">
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-
+            <li class="donut-interaction">
+              <button class="button">
+                Continuer à partir de cette configuration
+              </button>
+              <img src="../img/ArrowWhite.svg" alt="" />
+            </li>
+          </ul>
+        </li>
+        <li class="donut">
+          <img class="donut-image" src="../img/donut_blanc.jpg" alt="" />
+          <ul class="donut-bottom">
             <li>
-                <ul>
-                    <li>
-                        <img height="100" width="100" src="../img/donut_blanc.jpg" alt="Donut 4" />
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <section>
-                                    <h3><em>Ghost</em></h3>
-                                    <p>Glaçage à la vanille ainsi que des vermicelles. Donut fourré au chocolat blanc
-                                    </p>
-                                </section>
-                                <img width="140" height="50" src="../img/stars4.png" alt="note sur 5 étoiles" />
-                            </li>
-                            <li class="button">
-                                <button class="favorite styled" type="button">Continuer à partir de cette
-                                    configuration</button>
-                                <button class="favorite styled" type="button">Ajouter au panier</button>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
->>>>>>> f968d36a14e963c2c1e1cc1e8b9dc1c35f8c8d1d
+              <ul class="donut-text">
+                <li>
+                  <p>Nom de la configuration</p>
+                  <p>Description de la configuration</p>
+                </li>
+                <li>
+                  <ul class="donut-stars">
+                    <li>A</li>
+                    <li>B</li>
+                    <li>C</li>
+                    <li>D</li>
+                    <li>E</li>
+                  </ul>
+                </li>
+              </ul>
             </li>
-        </ul>
+            <li class="donut-interaction">
+              <button class="button">
+                Continuer à partir de cette configuration
+              </button>
+              <img src="../img/ArrowWhite.svg" alt="" />
+            </li>
+          </ul>
+        </li>
+      </ul>
     </main>
-    <footer>
-        <ul>
-            <li id="authors">
-                © 2025 DonutAix - Tous droits réservés. Ce site et son contenu sont
-                protégés par le droit d’auteur.
-            </li>
-            <li><img src="./img/Arrow.svg" alt="" /></li>
-            <li id="social-medias">
-                <ul>
-                    <li><a href="">Instagram</a></li>
-                    <li><a href="">Tiktok</a></li>
-                    <li><a href="">X</a></li>
-                </ul>
-            </li>
-        </ul>
-    </footer>
-</body>
 
+    <footer>
+      <ul>
+        <li id="authors">
+          © 2025 DonutAix - Tous droits réservés. Ce site et son contenu sont
+          protégés par le droit d’auteur.
+        </li>
+        <li>
+          <a href="#">
+            <img id="arrow" src="../img/ArrowWhite.svg" alt="" />
+          </a>
+        </li>
+        <li id="social-medias">
+          <ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">Tiktok</a></li>
+            <li><a href="">X</a></li>
+          </ul>
+        </li>
+      </ul>
+    </footer>
+    <script src="../js/header.js"></script>
+  </body>
 </html>
