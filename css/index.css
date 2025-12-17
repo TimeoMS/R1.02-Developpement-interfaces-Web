@@ -28,19 +28,6 @@ li img {
   gap: 3rem;
 }
 
-#Donut3D {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--color-image-example);
-  height: calc(100vh - 6rem);
-  width: 100%;
-}
-
-#Donut3D p {
-  font-size: var(--text-example);
-}
-
 #CTA {
   padding: 2rem 2rem;
 }
@@ -69,6 +56,47 @@ li img {
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
+}
+
+video {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+figure {
+  position: relative;
+}
+
+figure ul {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 2rem;
+  right: 2rem;
+  row-gap: 1rem;
+}
+
+figure ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+#speaker:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+figure img {
+  height: 3rem;
 }
 
 .donut {

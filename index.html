@@ -58,7 +58,33 @@
       </nav>
     </header>
     <main>
-      <section id="Donut3D"></section>
+      <figure>
+        <video muted loop autoplay>
+          <source src="videos/Donut Aix.mp4" />
+          <track
+            id="french-subtitles"
+            src="subtitles/french.vtt"
+            kind="subtitles"
+            srclang="fr"
+            label="Français"
+          />
+          <track
+            id="english-subtitles"
+            src="subtitles/english.vtt"
+            kind="subtitles"
+            srclang="fr"
+            label="Français"
+          />
+        </video>
+        <ul>
+          <li id="speaker">
+            <img src="img/speaker.svg" alt="" />
+          </li>
+          <li id="subtitle">
+            <img src="img/subtitles.svg" alt="" />
+          </li>
+        </ul>
+      </figure>
       <section id="CTA">
         <ul>
           <li id="best-seller">
@@ -107,5 +133,6 @@
       </ul>
     </footer>
     <script src="js/header.js"></script>
+    <script src="js/video.js"></script>
   </body>
 </html>
