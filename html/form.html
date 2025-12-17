@@ -4,55 +4,133 @@
 <head>
     <link href="../css/form.css" rel="stylesheet">
     <link href="../css/global.css" rel="stylesheet">
+    <link href="../css/index.css" rel="stylesheet">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DonutAix</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon.png">
 </head>
 
 <body>
-    <header> <!--menu--> </header>
+    <header>
+        <nav>
+            <ul>
+                <li id="burger-menu">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </li>
+                <li id="logo">Donut <span>Aix</span></li>
+                <li id="">
+                    <div id="shopping"></div>
+                    <div id="user"></div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <h1 class="h1">Inscription</h1>
-        <ul class="inscription-form">
-            <li>
-                <label for="Nom">Nom</label>
-                <input id="Nom" type="text" name="Nom" value=" ">
+        <ul>
+<<<<<<< HEAD
+            <li class="info">
+                <input class="champs" type="text" name="nom" placeholder="*Nom" required>
             </li>
-            <li>
-                <label for="Mail">Mail</label>
-                <input id="Mail" type="text" name="Mail" value=" ">
+            <li class="info">
+                <input class="champs" type="text" name="mail" placeholder="*Mail" required>
             </li>
-            <li>
-                <label for="Tel">Téléphone</label>
-                <input id="Tel" type="text" name="Tel" value=" ">
+            <li class="info">
+                <input class="champs" type="text" name="tel" placeholder="*Téléphone" required>
             </li>
-            <li>
-                <label for="MdP">Mot de passe</label>
-                <input id="MdP" type="text" name="MdP" value=" ">
+            <li class="info">
+                <input class="champs" type="text" name="mdp" placeholder="*Mot de passe" required>
             </li>
-            <li>
-                <label for="Confirmation MdP">Confirmation mot de passe</label>
-                <input id="Confirmation MdP" type="text" name="Confirmation MdP" value=" ">
+            <li class="info">
+                <input class="champs" type="text" name="confirmation mdp" placeholder="*Confirmation mdp" required>
             </li>
         </ul>
+
         <section class="case">
-            <input type="checkbox" name="actus" id="Actus" class="checkbox" title="Recevoir les Actus">
-            <label for="actus"><em>Recevoir les actus</em></label>
+            <section>
+                <input type="checkbox" name="actus" id="Actus" class="checkbox" title="Recevoir les Actus">
+                <label for="actus"><em>Recevoir les actus</em></label>
+            </section>
+            <ol class="genre">
+                <li>
+                    <input id="sexehomme" type="radio" name="sexe" value="Homme">
+                    <label for="">Homme</label>
+                </li>
+                <li>
+                    <input id="sexefemme" type="radio" name="sexe" value="Femme">
+                    <label for="">Femme</label>
+                </li>
+            </ol>
         </section>
-        <ol class="case">
-            <label for="sexe"></label>
-            <li>
-                <input id="sexehomme" type="radio" name="sexe" value="Homme">
-                <label for="">Homme</label>
-            </li>
-            <li>
-                <input id="sexefemme" type="radio" name="sexe" value="Femme">
-                <label for="">Femme</label>
-            </li>
-        </ol>
+
         <section class="h1">
-            <input type="submit" value="S'inscrire">
+            <input class="inscription" type="submit" value="S'inscrire">
         </section>
+=======
+            <li>
+                <ul class="inscription-form">
+                    <li>
+                        <label for="Nom">*Nom</label>
+                        <input id="Nom" type="text" name="Nom" value=" ">
+                    </li>
+                    <li>
+                        <label for="Mail">*Mail</label>
+                        <input id="Mail" type="text" name="Mail" value=" ">
+                    </li>
+                    <li>
+                        <label for="Tel">*Téléphone</label>
+                        <input id="Tel" type="text" name="Tel" value=" ">
+                    </li>
+                    <li>
+                        <label for="MdP">*Mot de passe</label>
+                        <input id="MdP" type="text" name="MdP" value=" ">
+                    </li>
+                    <li>
+                        <label for="Confirmation MdP">*Confirmation mot de passe</label>
+                        <input id="Confirmation MdP" type="text" name="Confirmation MdP" value=" ">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <ol>
+                    <li>
+                        <input type="checkbox" name="Recevoir les actus" id="actus">
+                        <label for="actus">Recevoir les actus</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="Homme" id="H">
+                        <label for="Homme">Homme</label>
+                        <input type="radio" name="Femme" id="F">
+                        <label for="Femme">Femme</label>
+                    </li>
+                </ol>
+            </li>
+            <li>
+                <input class="h1" type="submit" value="S'inscrire">
+            </li>
+        </ul>
+>>>>>>> f968d36a14e963c2c1e1cc1e8b9dc1c35f8c8d1d
     </main>
-    <footer><!--pied de page--></footer>
+
+    <footer>
+        <ul>
+            <li id="authors">
+                © 2025 DonutAix - Tous droits réservés. Ce site et son contenu sont
+                protégés par le droit d’auteur.
+            </li>
+            <li><img src="./img/Arrow.svg" alt="" /></li>
+            <li id="social-medias">
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Tiktok</a></li>
+                    <li><a href="">X</a></li>
+                </ul>
+            </li>
+        </ul>
+    </footer>
 </body>

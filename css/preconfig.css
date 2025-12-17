@@ -1,16 +1,51 @@
-.h1 {
+.donuts {
     justify-content: center;
     display: flex;
+<<<<<<< HEAD
+    flex-direction: column;
+=======
 }
 
 .images {
+    width: 100;
+    height: 100;
     justify-content: center;
     display: grid;
+>>>>>>> f968d36a14e963c2c1e1cc1e8b9dc1c35f8c8d1d
     list-style: none;
     gap: 5%;
 }
 
-.button {
-    justify-content: center;
+.images_donuts {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+.stars {
+    display: block;
+    margin-left: auto;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+}
+
+.buttons {
+    padding-top: 2%;
+    border-top: 2px solid black;
     display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
