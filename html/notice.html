@@ -1,31 +1,41 @@
 <!DOCTYPE html>
 <html lang="notice">
 <head>
+    <link rel="stylesheet" href="/amuhome/z25003515/Projet/R1.02-Developpement-interfaces-Web/css/notice.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donut-Aix</title>
 </head>
 <body>
-   <div>
-        <h2> Avis </h2>
-        <h3>Donnez votre avis !</h3>
-        <h5>*Nom</h5>
-        <h5>*Mail</h5>
-        <img class="fit-picture" src="/amuhome/z25003515/Projet/R1.02-Developpement-interfaces-Web/image/5stars2.png" alt="Tranche de pamplemousse sur une pile d'autres tranches" />
-        <div class="star-rating">
-        <input type="radio" name"star-rating" id="star1" value="1" />
-        <input type="radio" name"star-rating" id="star2" value="2" />
-        <input type="radio" name"star-rating" id="star3" value="3" />
-        <input type="radio" name"star-rating" id="star4" value="4" />
-        <input type="radio" name"star-rating" id="star5" value="5" />
-        <p><h5>Commentaire...</h5>cd ~/Projet/R101 
-        
-        
-        
-        </p>
-        <h3>Soumettre</h3>
-        
-        
-   </div>
+        <section class="titre">
+            <h2> Avis </h2>
+            <h3>Donnez votre avis !</h3>
+        </section>
+        <section class="base">
+            <section class="infos">
+                <label for="Nom">* Nom </label><input id="nom" type="text" name="nom" value=" ">
+                <label for="Mail">* Mail </label><input id="Mail" type="text" name="Mail" value=" ">
+            </section>
+            <section class = cadrenot>
+                <form action="save_rating.php" method="post">
+                    <section class="rating">
+                        <input type="radio" id="star5" name="note" value="5">
+                        <label for="star5" title="Excellent"></label>
+                        <input type="radio" id="star4" name="note" value="4">
+                        <label for="star4" title="Très bon"></label>
+                        <input type="radio" id="star3" name="note" value="3">
+                        <label for="star3" title="Bon"></label>
+                        <input type="radio" id="star2" name="note" value="2">
+                        <label for="star2" title="Moyen"></label>
+                        <input type="radio" id="star1" name="note" value="1">
+                        <label for="star1" title="Mauvais"></label>
+                    </section>
+                </form> 
+            </section>
+            <section class="fin"></section>
+                <textarea class="textarea" name="impression" rows="5" placeholder="Commentaire..."></textarea>
+                <input class="submit" type="submit" value="Soumettre">
+            </section>
+        </section>
 </body>
 </html>

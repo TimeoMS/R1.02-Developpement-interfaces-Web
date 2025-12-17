@@ -1,0 +1,73 @@
+.titre {
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ margin-bottom: 20px;
+}
+.content h4,h3 {
+  margin: 1px;
+}
+.base label {
+margin-top: 10px;
+margin-bottom: 10px; 
+font-weight: bold;
+}
+.base {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  gap: 10px;
+
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  gap: 5px;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-image: url("../img/emptystar.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  background-image: url("../img/fullstar.png");
+}
+
+.rating input:checked ~ label {
+  background-image: url("../img/fullstar.png");
+}
+.textarea {
+  display: flex;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.infos {
+  display: flex;
+  flex-direction: column;
+  margin: 1px;
+  width: 100%;
+}
+.submit {
+  display: flex;
+  align-self: center;
+}
+.fin {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 30px;              
+}
