@@ -1,0 +1,463 @@
+:root {
+  --bg-body: #121212;
+  --bg-card: #1e1e1e;
+  --bg-header: rgba(18, 18, 18, 0.95);
+  --text-main: #e0e0e0;
+  --text-muted: #a0a0a0;
+  --accent: #ffffff;
+  --border-color: #333333;
+}
+
+body {
+  background-color: var(--bg-body);
+  color: var(--text-main);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+li img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+#best-configuration,
+#best-configuration ul,
+#CTA ul,
+#best-seller h1,
+#best-configuration ul,
+#premium-donut,
+#see-all {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-header);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+header nav,
+header nav ul {
+  height: 100%;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  padding: 0 2rem;
+}
+
+#nav-top {
+  position: relative;
+  height: 6rem;
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Jomolhari", serif;
+  font-size: 2.8rem;
+  line-height: 1;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#logo span {
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: var(--text-muted);
+  margin-top: 0.5rem;
+}
+
+#burger-menu {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.2rem;
+  width: 1.8rem;
+}
+
+#burger-menu div {
+  height: 2px;
+  width: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 300ms ease;
+}
+
+#burger-menu.activated div:nth-child(1) {
+  transform: translateY(0.55rem) rotate(45deg);
+}
+
+#burger-menu.activated div:nth-child(2) {
+  opacity: 0;
+}
+
+#burger-menu.activated div:nth-child(3) {
+  transform: translateY(-0.55rem) rotate(-45deg);
+}
+
+#burger-opened {
+  width: 100%;
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--bg-body);
+  border-bottom: 1px solid var(--border-color);
+  transition: all ease-in-out 500ms;
+}
+
+#burger-opened.activated {
+  max-height: 40rem;
+  padding: 2rem 2rem;
+}
+
+#burger-opened li {
+  width: 100%;
+  border-bottom: 1px solid #222;
+}
+
+#burger-opened li:last-child {
+  border-bottom: none;
+}
+
+#burger-opened li a {
+  cursor: pointer;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  color: var(--text-main);
+}
+
+#burger-opened li a:hover {
+  color: var(--accent);
+  padding-left: 10px;
+}
+
+#burger-opened li a img {
+  width: 0.8rem;
+  filter: invert(1);
+  opacity: 0.7;
+}
+
+#nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#nav-right a,
+#nav-right button {
+  border: none;
+  border-radius: 50%;
+  padding: 0.6rem;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+#nav-right a:hover,
+#nav-right button:hover {
+  background: var(--accent);
+}
+
+#nav-right a:hover img {
+  filter: invert(1);
+}
+
+nav li img {
+  width: 1.5rem;
+  height: 1.5rem;
+  filter: invert(1);
+}
+
+figure {
+  position: relative;
+  border-bottom: 1px solid var(--border-color);
+}
+
+video {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  opacity: 0.8;
+  filter: brightness(0.8) contrast(1.1);
+}
+
+figure ul {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2rem;
+  row-gap: 1.5rem;
+}
+
+figure ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(30, 30, 30, 0.6);
+  backdrop-filter: blur(5px);
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+figure ul li:hover {
+  background: var(--accent);
+  transform: scale(1.1);
+  border-color: var(--accent);
+}
+
+figure ul li:hover img {
+  filter: invert(1);
+}
+
+figure img {
+  height: 1.5rem;
+  width: auto;
+  filter: invert(1);
+}
+
+#best-seller {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3rem;
+  padding: 4rem 2rem;
+}
+
+#best-seller h1 {
+  text-align: center;
+  font-family: "Jomolhari", serif;
+  font-size: 2.5rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+#best-seller ul,
+#best-configuration ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+#best-configuration ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.donut {
+  overflow: hidden;
+  position: relative;
+  font-size: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 18rem;
+  height: 22rem;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.donut:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border-color: #555;
+}
+
+.donut img {
+  width: 90%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 10px rgba(0, 0, 0, 0.5));
+}
+
+#CTA {
+  padding: 6rem 2rem;
+  background: linear-gradient(to bottom, var(--bg-body), #000);
+  border-top: 1px solid var(--border-color);
+}
+
+#CTA ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+#premium-donut,
+#see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#see-all a,
+#premium-donut a,
+#CTA a {
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+#see-all a:hover,
+#premium-donut a:hover,
+#CTA a:hover {
+  background: var(--accent);
+  color: var(--bg-body);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+footer {
+  padding: 3rem 2rem;
+  width: 100%;
+  color: var(--text-muted);
+  background: #000;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
+
+footer ul {
+  width: 100%;
+  height: 100%;
+}
+
+footer > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+footer img {
+  transform: rotate(-90deg);
+  height: 2rem;
+  filter: invert(1);
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+footer img:hover {
+  opacity: 1;
+}
+
+#authors,
+#social-medias {
+  width: auto;
+}
+
+#social-medias {
+  text-align: right;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#social-medias a {
+  color: var(--text-main);
+  font-weight: bold;
+}
+
+#social-medias a:hover {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+/* Pour les écrans >= 700px (Tablettes) */
+@media screen and (min-width: 700px) {
+  #best-configuration ul,
+  #best-seller ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .donut {
+    width: 16rem;
+    height: 20rem;
+  }
+
+  #best-seller h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Pour les écrans >= 1200px (Desktop) */
+@media screen and (min-width: 1200px) {
+  #best-configuration ul {
+    gap: 3rem;
+  }
+
+  .donut {
+    width: 20rem;
+    height: 24rem;
+  }
+
+  #CTA ul {
+    flex-direction: row;
+  }
+
+  #logo {
+    font-size: 3.5rem;
+  }
+}
