@@ -14,7 +14,8 @@ form {
   padding: 1.5rem 1rem;
 }
 
-form span {
+form fieldset {
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,6 +37,10 @@ form textarea {
   border: none;
   padding: 0.5rem;
   border-radius: 5px;
+}
+
+form textarea::placeholder {
+  color: white;
 }
 
 #infos {

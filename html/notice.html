@@ -19,7 +19,7 @@
             <div></div>
           </li>
           <li id="logo">Donut <span>Aix</span></li>
-          <li id="">
+          <li>
             <div id="shopping"></div>
             <div id="user"></div>
           </li>
@@ -60,17 +60,17 @@
     </header>
 
     <main>
-      <form action="">
-        <span>
-          <p>Avis</p>
+      <form action="POST">
+        <fieldset>
+          <legend>Avis</legend>
           <p style="font-size: 1.6rem">Donnez-nous votre avis !</p>
-        </span>
+        </fieldset>
         <ul id="infos">
           <li>
-            <input type="text" name="" placeholder="* Nom" required id="" />
+            <input type="text" name="name" placeholder="* Nom" required />
           </li>
           <li>
-            <input type="text" name="" placeholder="* Mail" required id="" />
+            <input type="text" name="mail" placeholder="* Mail" required />
           </li>
         </ul>
         <ul id="stars">
@@ -81,8 +81,7 @@
           <li>P</li>
         </ul>
         <textarea
-          name=""
-          id=""
+          name="comment"
           placeholder="Commentaire (Facultatif)"
         ></textarea>
         <input class="button" type="submit" value="Soumettre" />
