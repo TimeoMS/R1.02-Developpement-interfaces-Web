@@ -144,6 +144,10 @@ nav li img {
   text-align: right;
 }
 
+#social-medias a:hover {
+  text-decoration: underline;
+}
+
 #nav-right {
   display: flex;
   justify-content: center;

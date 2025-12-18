@@ -22,6 +22,12 @@ form fieldset {
   flex-direction: column;
 }
 
+form fieldset legend,
+form fieldset p {
+  text-align: center;
+  width: 100%;
+}
+
 form ul input {
   background: none;
   border: none;
@@ -61,4 +67,10 @@ form textarea::placeholder {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 0.1rem;
+}
+
+#stars img {
+  cursor: pointer;
+  width: 2rem;
 }
