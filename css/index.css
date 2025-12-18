@@ -117,10 +117,6 @@ figure img {
 
 /* Pour les écrans >= 700px */
 @media screen and (min-width: 700px) {
-  :root {
-    font-size: 70%;
-  }
-
   #best-configuration ul {
     justify-content: center;
     gap: 4rem;
@@ -132,18 +128,7 @@ figure img {
 }
 
 /* Pour les écrans >= 700px */
-@media screen and (min-width: 900px) {
-  :root {
-    font-size: 100%;
-  }
-}
-
-/* Pour les écrans >= 700px */
 @media screen and (min-width: 1200px) {
-  :root {
-    font-size: 105%;
-  }
-
   #best-configuration ul {
     gap: 1rem;
   }

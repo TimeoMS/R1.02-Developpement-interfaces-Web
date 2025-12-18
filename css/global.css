@@ -52,3 +52,24 @@ a:hover {
   border: 0.5px solid black;
   border-radius: 3px;
 }
+
+/* Pour les écrans >= 700px */
+@media screen and (min-width: 700px) {
+  :root {
+    font-size: 70%;
+  }
+}
+
+/* Pour les écrans >= 700px */
+@media screen and (min-width: 900px) {
+  :root {
+    font-size: 100%;
+  }
+}
+
+/* Pour les écrans >= 700px */
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 105%;
+  }
+}
