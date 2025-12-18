@@ -46,11 +46,31 @@ nav > ul {
   border-bottom: solid #000 0.1px;
 }
 
+nav li a {
+  border-radius: 50%;
+  padding: 0.5rem;
+  background: #ddd;
+}
+
+nav li img {
+  width: 2rem;
+  height: 2rem;
+}
+
 #burger-opened li {
   width: 100%;
 }
 
+#nav-top {
+  position: relative;
+  height: 6rem;
+}
+
 #logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,4 +148,11 @@ nav > ul {
 
 #social-medias {
   text-align: right;
+}
+
+#nav-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
 }

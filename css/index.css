@@ -44,7 +44,7 @@ li img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1rem;
+  row-gap: 2rem;
 }
 
 #best-seller h1 {
@@ -86,8 +86,8 @@ figure ul li {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.6);
-  height: 7rem;
-  width: 7rem;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
 }
 
@@ -96,15 +96,59 @@ figure ul li:hover {
 }
 
 figure img {
-  height: 3rem;
+  height: 2rem;
 }
 
 .donut {
+  overflow: hidden;
   font-size: 0.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 10rem;
   height: 15rem;
-  background: var(--color-image-example);
+  border-radius: 5px;
+}
+
+.donut img {
+  width: auto;
+  height: 100%;
+}
+
+/* Pour les écrans >= 700px */
+@media screen and (min-width: 700px) {
+  :root {
+    font-size: 70%;
+  }
+
+  #best-configuration ul {
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .donut {
+    width: 15rem;
+  }
+}
+
+/* Pour les écrans >= 700px */
+@media screen and (min-width: 900px) {
+  :root {
+    font-size: 100%;
+  }
+}
+
+/* Pour les écrans >= 700px */
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 105%;
+  }
+
+  #best-configuration ul {
+    gap: 1rem;
+  }
+
+  .donut {
+    width: 20rem;
+  }
 }
