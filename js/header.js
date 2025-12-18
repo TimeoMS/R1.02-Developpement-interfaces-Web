@@ -9,11 +9,11 @@ burger.onclick = () => {
 };
 
 darkmode.onclick = () => {
-  if (css[0].href.includes("css/dark.css")) {
-    css[0].href = "css/index.css";
-    css[1].href = "css/headerfooter.css";
+  if (css[0].href.includes("mcss/dark.min.css")) {
+    css[0].href = "mcss/index.min.css";
+    css[1].href = "mcss/headerfooter.min.css";
   } else {
     css[1].href = "";
-    css[0].href = "css/dark.css";
+    css[0].href = "mcss/dark.min.css";
   }
 };

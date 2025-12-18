@@ -19,3 +19,7 @@
 - [Intégrer Google Maps](https://copilot.microsoft.com/shares/RXTnsBxwEYWriDokyPUXm)
 
 - [Agrandir un bouton](https://copilot.microsoft.com/shares/2Db4PHcapccxd8iH3am8S)
+
+## Trello
+
+[Lien du trello](https://trello.com/b/IW0PDnBO/donutaix)

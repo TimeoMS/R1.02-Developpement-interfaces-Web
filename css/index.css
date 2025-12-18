@@ -76,9 +76,10 @@ figure ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
   right: 2rem;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 figure ul li {
