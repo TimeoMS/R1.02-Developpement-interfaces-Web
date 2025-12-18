@@ -70,10 +70,3 @@ a:hover {
     font-size: 100%;
   }
 }
-
-/* Pour les écrans >= 700px */
-@media screen and (min-width: 1200px) {
-  :root {
-    font-size: 105%;
-  }
-}
